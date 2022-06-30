@@ -8,14 +8,21 @@
     <link rel="stylesheet" href = "/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
+    <header class="header">
+       
+        <div class="wrapper">
+
             <div class="header__wrapper">
                 <div class="logo_button">
-                    <img src="{% static 'shop/img/svg/logo.svg' %}" alt="" class="header__logo-pic">
+                    <div class="header__logo">
+                        <a href="{% url 'home' %}" class="header__logo-link">
+                            <img src="#" alt="" class="header__logo-pic">
+                        </a>
+                    </div>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__list">
+                        
                         <li class="header__item">
                             <a href="" class="header__link">Избранное</a>
                         </li>
@@ -23,12 +30,48 @@
                             <a href="" class="header__link">Корзина</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__link">ыы</a>
+                            <a href="{% url 'logout' %}" class="header__link">Выйти</a>
                         </li>
+                        
+                        <li class="header__item">
+                            <a href="{% url 'register' %}" class="header__link">Регистрация</a> 
+                            <a href="{% url 'auth' %}" class="header__link">Войти</a>
+                        </li>
+                        
                     </ul>
                 </nav>
             </div>
-        </header>
+            
+        </div>
+    </header>
+
+    
+    <div class="wrapper">
+        <div class="aboutcom">
+            <h1 class="about_title">
+                Название команды
+            </h1>
+            <p class="about_text">
+                Текст о команде 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis sapiente similique ipsam provident illo, sed a fugiat voluptatum eos iure maxime fuga, ea quibusdam quidem laudantium ad repudiandae quos!
+
+            </p>
+        </div>
     </div>
+
+    <div class="products">
+        <div class="product_list">
+            <div class="product">
+                <img src="" alt="" class="product_pic">
+                <h1 class="product_name">
+
+                </h1>
+                <p class="product_description">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

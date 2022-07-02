@@ -10,3 +10,22 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector('#openModal').style.marginLeft = '0px';
     });
   });
+
+  var hiddenElement = document.querySelector(".sa");
+  var hiddenElement1 = document.querySelector(".sa1");
+  var btn = document.querySelector('.btn');
+  
+  function handleButtonClick() {
+
+     hiddenElement.scrollIntoView({block: "start", behavior: "smooth"});
+  }
+  
+  btn.addEventListener('click', handleButtonClick);
+  
+  function handleButtonClick1() {
+
+    hiddenElement1.scrollIntoView({block: "start", behavior: "smooth"});
+ }
+ 
+ btn.addEventListener('click', handleButtonClick1);
+ 

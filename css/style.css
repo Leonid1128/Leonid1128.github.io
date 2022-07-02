@@ -233,7 +233,7 @@ body{
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 400px) {
     .product_pic{
         width: 100px;
         height: 100px;
@@ -324,3 +324,22 @@ body{
     
     
     }
+
+    .sa, .sa1{
+        
+        height: 20px;
+    }
+
+
+
+
+.pay_invalid{
+    
+    margin-top: 140px;
+    font-size: 36px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

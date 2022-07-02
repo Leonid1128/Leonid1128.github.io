@@ -33,29 +33,22 @@
                     <ul class="header__list">
                         
                         <script>
-                            function our_team() {
-                                window.scrollTo(0, 280);
-                                
-                            }
-                            function products() {
-                                window.scrollTo(0, 1040);
-                            }
                             
                             function about() {
                                 window.scrollTo(0, 0);
                             }
                             
-                        
+                            
                           </script>
                         <li class="header__item">
                             
                             <button href="" class="header__link" onclick="about()">О нас</button>
                         </li>
                         <li class="header__item">
-                            <button href="" class="header__link" onclick="our_team()">Наша команда</button>
+                            <button href="" class="header__link" onclick="handleButtonClick1()">Наша команда</button>
                         </li>
                         <li class="header__item">
-                            <button href="" class="header__link" onclick="products()">Товары</button>
+                            <button href="" class="header__link" onclick="handleButtonClick()">Товары</button>
                         </li>
                         
                     </ul>
@@ -68,7 +61,7 @@
     
     
     <div class="wrapper">
-        <h1 id="before_block">О нас</h1>   
+        <h1 id="before_block" class="aboutus">О нас</h1>   
         <div class="aboutcom">
             <h1 class="about_title">
                 Название команды
@@ -79,7 +72,7 @@
 
             </p>
         </div>
-
+        <div class="sa1"></div>
         <h1 id="before_block">Наша команда</h1>   
 
         <div class="grid_members_wrapper">
@@ -138,8 +131,9 @@
                 </p>
             </div>
         </div>
+        <div class="sa"></div>
         
-        <h1 id="before_block">Наши товары</h1>    
+        <h1 id="before_block" class="ourproducts">Наши товары</h1>    
 
         <div class="products">
             <div class="product_list">
@@ -187,7 +181,30 @@
             </div>
           </div>
 
-        
+          <div class="container">
+            <div id="openModal1" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title">Название дрона 2</h3>
+                    <div class="modal_cost_desc">
+                        <div class="modal-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores error fugit iste fugiat, consequuntur atque impedit. Sit perferendis amet ut? Vero est fugit voluptatibus eum ut voluptatum eligendi temporibus beatae!
+                        </div>
+                        <div class="cost_buy">
+                            <h1 class="cost">Цена: <p>xxxx</p></h1>
+                            <a href="/pay.html" class="buylink">Купить</a>
+                        </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <img src="/img/71Rl8Rfd8vL._AC_SS450_.jpg" alt="" class="product_pic">
+                  <a href="#close" title="Close" class="close">×</a>
+                </div>
+              </div>
+            </div>
+          </div>
         
           <!-- КОНЕЦ МОДАЛЬНЫХ ОКОН -->
 

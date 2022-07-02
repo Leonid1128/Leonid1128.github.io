@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href = "/style.css">
+    <link rel="stylesheet" href="/reset.css">
+    <script src="/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -16,7 +18,7 @@
                 <div class="logo_button">
                     <div class="header__logo">
                         <a href="{% url 'home' %}" class="header__logo-link">
-                            <img src="#" alt="" class="header__logo-pic">
+                            <img src="/image_7-removebg-preview.png" alt="" class="header__logo-pic">
                         </a>
                     </div>
                 </div>
@@ -24,7 +26,7 @@
                     <ul class="header__list">
                         
                         <li class="header__item">
-                            <a href="" class="header__link">Избранное</a>
+                            <a href="" class="header__link" id="scrollUp">Избранное</a>
                         </li>
                         <li class="header__item">
                             <a href="" class="header__link">Корзина</a>
@@ -123,7 +125,7 @@
 
         <div class="products">
             <div class="product_list">
-                <div class="product">
+                <a class="product" href="/drone1.html">
                    
                     <div class="description">
                         <h1 class="product_name">
@@ -133,12 +135,12 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde labore modi accusamus nobis, consectetur rerum voluptas incidunt rem molestiae? Sunt at tenetur repellendus quasi corporis maxime, quisquam soluta nesciunt?
                         </p>
                     </div>
-                    
+
                     <img src="/71Rl8Rfd8vL._AC_SS450_.jpg" alt="" class="product_pic">
-                </div>
+                </a>
             </div>
         </div>
-
+        <footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequatur tenetur commodi repellendus iure voluptates, incidunt, beatae, nobis ex sint velit voluptatibus non placeat? Quis, necessitatibus. Deleniti, nisi non? Modi!</footer>
         </div>
 
 </body>

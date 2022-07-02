@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href = "/style.css">
-    <link rel="stylesheet" href="/reset.css">
-    <script src="/main.js"></script>
+    <title>Название команды</title>
+    <link rel="shortcut icon" href="/img/image_7-removebg-preview.png" type="image/x-icon"/>
+    <link rel="stylesheet" href = "/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/drone1,2.css">
 </head>
 <body>
     <header class="header">
@@ -15,29 +16,46 @@
         <div class="wrapper">
 
             <div class="header__wrapper">
+                
                 <div class="logo_button">
                     <div class="header__logo">
                         <a href="{% url 'home' %}" class="header__logo-link">
-                            <img src="/image_7-removebg-preview.png" alt="" class="header__logo-pic">
+                            <img src="/img/image_7-removebg-preview.png" alt="" class="header__logo-pic">
                         </a>
                     </div>
                 </div>
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="js/menu.js"></script> 
                 <nav class="header__nav">
                     <ul class="header__list">
                         
-                        <li class="header__item">
-                            <a href="" class="header__link" id="scrollUp">Избранное</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="" class="header__link">Корзина</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="{% url 'logout' %}" class="header__link">Выйти</a>
-                        </li>
+                        <script>
+                            function our_team() {
+                                window.scrollTo(0, 280);
+                                
+                            }
+                            function products() {
+                                window.scrollTo(0, 1040);
+                            }
+                            
+                            function about() {
+                                window.scrollTo(0, 0);
+                            }
+                            
                         
+                          </script>
                         <li class="header__item">
-                            <a href="{% url 'register' %}" class="header__link">Регистрация</a> 
-                            <a href="{% url 'auth' %}" class="header__link">Войти</a>
+                            
+                            <button href="" class="header__link" onclick="about()">О нас</button>
+                        </li>
+                        <li class="header__item">
+                            <button href="" class="header__link" onclick="our_team()">Наша команда</button>
+                        </li>
+                        <li class="header__item">
+                            <button href="" class="header__link" onclick="products()">Товары</button>
                         </li>
                         
                     </ul>
@@ -66,7 +84,7 @@
 
         <div class="grid_members_wrapper">
             <div class="member">
-                <img src="/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
+                <img src="/img/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
                 <h1>
                     Имя фамилия
                 </h1>
@@ -75,7 +93,7 @@
                 </p>
             </div>
             <div class="member">
-                <img src="/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
+                <img src="/img/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
                 <h1>
                     Имя фамилия
                 </h1>
@@ -84,7 +102,7 @@
                 </p>
             </div>
             <div class="member">
-                <img src="/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
+                <img src="/img/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
                 <h1>
                     Имя фамилия
                 </h1>
@@ -93,7 +111,7 @@
                 </p>
             </div>
             <div class="member">
-                <img src="/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
+                <img src="/img/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
                 <h1>
                     Имя фамилия
                 </h1>
@@ -102,7 +120,7 @@
                 </p>
             </div>
             <div class="member">
-                <img src="/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
+                <img src="/img/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
                 <h1>
                     Имя фамилия
                 </h1>
@@ -111,7 +129,7 @@
                 </p>
             </div>
             <div class="member">
-                <img src="/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
+                <img src="/img/4213460-account-avatar-head-person-profile-user_115386.png" alt="" class="member_photo">
                 <h1>
                     Имя фамилия
                 </h1>
@@ -125,18 +143,69 @@
 
         <div class="products">
             <div class="product_list">
-                <a class="product" href="/drone1.html">
+                <a class="product" href="#openModal">
                    
                     <div class="description">
                         <h1 class="product_name">
-                            Название дрона
+                            Название дрона 1
                         </h1>
                         <p class="product_description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde labore modi accusamus nobis, consectetur rerum voluptas incidunt rem molestiae? Sunt at tenetur repellendus quasi corporis maxime, quisquam soluta nesciunt?
                         </p>
                     </div>
 
-                    <img src="/71Rl8Rfd8vL._AC_SS450_.jpg" alt="" class="product_pic">
+                    <img src="/img/71Rl8Rfd8vL._AC_SS450_.jpg" alt="" class="product_pic">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- МОДАЛЬНЫЕ ОКНА -->
+
+        <div class="container">
+            <div id="openModal" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title">Название дрона</h3>
+                    <div class="modal_cost_desc">
+                        <div class="modal-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores error fugit iste fugiat, consequuntur atque impedit. Sit perferendis amet ut? Vero est fugit voluptatibus eum ut voluptatum eligendi temporibus beatae!
+                        </div>
+                        <div class="cost_buy">
+                            <h1 class="cost">Цена: <p>xxxx</p></h1>
+                            <a href="/pay.html" class="buylink">Купить</a>
+                        </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <img src="/img/71Rl8Rfd8vL._AC_SS450_.jpg" alt="" class="product_pic">
+                  <a href="#close" title="Close" class="close">×</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+        
+          <!-- КОНЕЦ МОДАЛЬНЫХ ОКОН -->
+
+          <script src="/js/main.js"></script>
+        <div class="products">
+            <div class="product_list">
+                <a class="product" href="#openModal1">
+                   
+                    <div class="description">
+                        <h1 class="product_name">
+                            Название дрона 2
+                        </h1>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde labore modi accusamus nobis, consectetur rerum voluptas incidunt rem molestiae? Sunt at tenetur repellendus quasi corporis maxime, quisquam soluta nesciunt?
+                        </p>
+                    </div>
+
+                    <img src="/img/71Rl8Rfd8vL._AC_SS450_.jpg" alt="" class="product_pic">
                 </a>
             </div>
         </div>

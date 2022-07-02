@@ -450,6 +450,7 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
 }
 
 .aboutcom h1{
@@ -463,4 +464,65 @@ body{
 
 .aboutcom p{
     font-size: 20px;
+}
+
+#before_block{
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.member_photo{
+    width: 250px;
+    height: 250px;
+}
+
+.grid_members_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.member h1{
+    font-size: 24px;
+}
+
+.member p{
+    font-size: 16px;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.product_name{
+    font-size: 36px;
+}
+
+.product_description{
+    font-size: 20px;
+}
+
+
+.product_pic{
+    width: 350px;
+    height: 350px;
+    
 }

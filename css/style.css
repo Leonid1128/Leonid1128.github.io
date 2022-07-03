@@ -142,8 +142,8 @@ body{
     margin-top: 80px;
 }
 .member_photo{
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
